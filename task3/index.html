@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 20px;
+		}
+		.clear-fix::after {
+			content: "";
+			display: block;
+			width: 0;
+			clear: both;
+		}
+		.outer {
+			box-sizing: border-box;
+			width: 100%;
+			min-width: 440px;
+			padding: 20px;
+			background-color: #eee;
+		}
+		.bordered {
+			border: 1px solid #999;
+		}
+		.left {
+			box-sizing: border-box;
+			width: 200px;
+			float: left;
+			background-color: #fff;
+			padding: 20px;
+		}
+		img.logo {
+			box-sizing: border-box;
+			width: 80px;
+			height: 80px;
+			margin-right: 20px;
+			float: left;
+		}
+		.right {
+			box-sizing: border-box;
+			width: 120px;
+			padding: 20px;
+			background-color: #fff;
+			float: right;
+		}
+		.middle {
+			margin: 0 140px 0 220px;
+			padding: 20px;
+			background-color: #fff;
+		}
+		.middle p {
+			word-wrap: break-word;
+		}
+		.right>img.logo:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer bordered clear-fix">
+		<div class="left bordered clear-fix">
+			<img src="" alt="" class="logo bordered">
+			<span>Excited</span>
+		</div>
+		<div class="right bordered">
+			<img src="" alt="" class="logo bordered">
+			<img src="" alt="" class="logo bordered">
+			<img src="" alt="" class="logo bordered">
+		</div>
+		<div class="middle bordered">
+			<p>Hello</p>
+			<p>Thank you</p>
+			<p>Thank you very much!</p>
+			<p>Thank you</p>
+			<p>Thank you</p>
+			<p>Thank you</p>
+			<p>Thank you</p>
+			<p>Thank you</p>
+
+		</div>
+	</div>
+</body>
+</html>

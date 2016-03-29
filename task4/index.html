@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		html {
+			height: 100%;
+		}
+		body {
+			min-height: 100%;
+			position: relative;
+			margin: 0;
+		}
+		.center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -200px;
+			margin-top: -100px;
+			width: 400px;
+			height: 200px;
+			background-color: #ccc;
+		}
+		.circle {
+			background-color: #fc0;
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+		}
+		.left-top {
+			position: absolute;
+			left: -50px;
+			top: -50px;
+			clip: rect(50px,100px,100px,50px);
+		}
+		.right-bottom {
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			clip: rect(0px,50px,50px,0px);
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<div class="left-top circle"></div>
+		<div class="right-bottom circle"></div>
+	</div>
+</body>
+</html>
